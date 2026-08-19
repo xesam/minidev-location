@@ -1,0 +1,19 @@
+{
+    "pages": [
+        "pages/index/index"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "@mini-dev/location",
+        "navigationBarTextStyle": "black"
+    },
+    "permission": {
+        "scope.userLocation": {
+            "desc": "用于获取你的地理位置"
+        }
+    },
+    "requiredPrivateInfos": [
+        "getLocation"
+    ]
+}

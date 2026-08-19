@@ -1,0 +1,27 @@
+<view class="container">
+    <view class="header">@mini-dev/location (WeChat)</view>
+    <view class="result">{{result}}</view>
+
+    <view class="section-title">1 · 基础使用</view>
+    <view class="action" bind:tap="onTapGetLocation">getLocation 基础（透传 + timeout/maxAge/retry）</view>
+    <view class="action" bind:tap="onTapPure">纯透传（无 ext，等价原生）</view>
+
+    <view class="section-title">2 · 内置拦截器</view>
+    <view class="action" bind:tap="onTapCache">cache 缓存（maxAge，连调命中）</view>
+    <view class="action" bind:tap="onTapTimeout">timeout 超时（→ TIMEOUT）</view>
+    <view class="action" bind:tap="onTapAbort">abort 取消（signal → CANCELLED）</view>
+    <view class="action" bind:tap="onTapRetry">retry 重试（仅瞬态错误）</view>
+
+    <view class="section-title">3 · 自定义拦截器</view>
+    <view class="action" bind:tap="onTapCustomInterceptor">方法级默认拦截器（createMethod）</view>
+    <view class="action" bind:tap="onTapExtInterceptor">单次追加拦截器（ext.interceptors）</view>
+
+    <view class="section-title">4 · 回调模式</view>
+    <view class="action" bind:tap="onTapCallback">success/fail/complete（返回 undefined）</view>
+
+    <view class="section-title">5 · 权限闭环</view>
+    <view class="action" bind:tap="onTapPermission">permission 中间件（getSetting→authorize）</view>
+
+    <view class="section-title">6 · 模糊定位</view>
+    <view class="action" bind:tap="onTapFuzzy">getFuzzyLocation（与精确互斥）</view>
+</view>

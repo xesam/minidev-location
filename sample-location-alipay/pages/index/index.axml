@@ -1,0 +1,24 @@
+<view class="container">
+    <view class="header">@mini-dev/location (Alipay)</view>
+    <view class="result">{{result}}</view>
+
+    <view class="section-title">1 · 基础使用</view>
+    <view class="action" onTap="onTapGetLocation">getLocation 基础（透传 + timeout/maxAge/retry）</view>
+    <view class="action" onTap="onTapPure">纯透传（无 ext，等价原生）</view>
+
+    <view class="section-title">2 · 内置拦截器</view>
+    <view class="action" onTap="onTapCache">cache 缓存（maxAge，连调命中）</view>
+    <view class="action" onTap="onTapTimeout">timeout 超时（→ TIMEOUT）</view>
+    <view class="action" onTap="onTapAbort">abort 取消（signal → CANCELLED）</view>
+    <view class="action" onTap="onTapRetry">retry 重试（仅瞬态错误）</view>
+
+    <view class="section-title">3 · 自定义拦截器</view>
+    <view class="action" onTap="onTapCustomInterceptor">方法级默认拦截器（createMethod）</view>
+    <view class="action" onTap="onTapExtInterceptor">单次追加拦截器（ext.interceptors）</view>
+
+    <view class="section-title">4 · 回调模式</view>
+    <view class="action" onTap="onTapCallback">success/fail/complete（返回 undefined）</view>
+
+    <view class="section-title">5 · 权限闭环</view>
+    <view class="action" onTap="onTapPermission">permission 中间件（getSetting→authorize）</view>
+</view>

@@ -1,0 +1,13 @@
+{
+  "name": "sample-location-wechat",
+  "version": "0.0.0",
+  "private": true,
+  "main": "app.js",
+  "dependencies": {
+    "@mini-dev/location-wx": "workspace:*",
+    "@mini-dev/location": "workspace:*",
+    "koa-compose": "catalog:"
+  },
+  "license": "ISC",
+  "description": "@mini-dev/location-wx 微信小程序示例"
+}

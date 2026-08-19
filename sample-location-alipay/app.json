@@ -1,0 +1,9 @@
+{
+    "pages": [
+        "pages/index/index"
+    ],
+    "window": {
+        "defaultTitle": "@mini-dev/location",
+        "titleBarColor": "#fff"
+    }
+}

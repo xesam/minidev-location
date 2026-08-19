@@ -1,0 +1,13 @@
+{
+  "name": "sample-location-alipay",
+  "version": "0.0.0",
+  "private": true,
+  "main": "app.js",
+  "dependencies": {
+    "@mini-dev/location-my": "workspace:*",
+    "@mini-dev/location": "workspace:*",
+    "koa-compose": "catalog:"
+  },
+  "license": "ISC",
+  "description": "@mini-dev/location-my 支付宝小程序示例"
+}

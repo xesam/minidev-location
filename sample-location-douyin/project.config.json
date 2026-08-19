@@ -1,0 +1,28 @@
+{
+    "setting": {
+        "urlCheck": true,
+        "es6": true,
+        "postcss": true,
+        "minified": true,
+        "newFeature": true,
+        "autoCompile": true,
+        "compileHotReLoad": true,
+        "nativeCompile": true
+    },
+    "appid": "testAppId",
+    "projectname": "sample-location-douyin",
+    "douyinProjectType": "native",
+    "condition": {
+        "miniprogram": {
+            "list": [
+                {
+                    "name": "pages/index/index",
+                    "pathName": "pages/index/index",
+                    "scene": "990001",
+                    "launchFrom": "scan",
+                    "location": "qr_code"
+                }
+            ]
+        }
+    }
+}

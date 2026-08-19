@@ -1,0 +1,16 @@
+{
+  "name": "sample-location-douyin",
+  "version": "0.0.0",
+  "private": true,
+  "main": "app.js",
+  "dependencies": {
+    "@mini-dev/location-tt": "workspace:*",
+    "@mini-dev/location": "workspace:*",
+    "koa-compose": "catalog:"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "@mini-dev/location-tt 抖音小程序示例",
+  "type": "commonjs"
+}

@@ -1,0 +1,65 @@
+{
+  "name": "@mini-dev/location-wx",
+  "version": "0.1.0",
+  "description": "cross-miniprogram device location helper — WeChat (wx) platform package",
+  "license": "ISC",
+  "author": "xesam",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xesam/minidev-location.git",
+    "directory": "packages/wx"
+  },
+  "bugs": {
+    "url": "https://github.com/xesam/minidev-location"
+  },
+  "homepage": "https://github.com/xesam/minidev-location#readme",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/cjs/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/esm/index.d.ts",
+        "default": "./dist/esm/index.js"
+      },
+      "require": {
+        "types": "./dist/cjs/index.d.ts",
+        "default": "./dist/cjs/index.js"
+      }
+    },
+    "./package.json": "./package.json"
+  },
+  "miniprogram": "dist/cjs",
+  "sideEffects": false,
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "rimraf dist && tsdown",
+    "typecheck": "tsc --noEmit",
+    "test": "jest --coverage"
+  },
+  "dependencies": {
+    "@mini-dev/location": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/jest": "catalog:",
+    "@types/node": "catalog:",
+    "jest": "catalog:",
+    "rimraf": "catalog:",
+    "ts-jest": "catalog:",
+    "tsdown": "catalog:",
+    "typescript": "catalog:"
+  },
+  "keywords": [
+    "miniapp",
+    "miniprogram",
+    "location",
+    "wechat",
+    "wx"
+  ]
+}
