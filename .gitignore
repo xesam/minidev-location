@@ -8,3 +8,4 @@ coverage
 *.iml
 .DS_Store
 CLAUDE.md
+*.private.config.json

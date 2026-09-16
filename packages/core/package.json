@@ -1,6 +1,6 @@
 {
   "name": "@mini-dev/location",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "cross-miniprogram device location helper — platform-agnostic core engine",
   "license": "ISC",
   "author": "xesam",
@@ -29,7 +29,7 @@
     },
     "./package.json": "./package.json"
   },
-  "miniprogram": "dist/cjs",
+  "miniprogram": "dist/cjs/index.js",
   "sideEffects": false,
   "files": [
     "dist"

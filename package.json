@@ -1,6 +1,6 @@
 {
   "name": "minidev-location",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "description": "cross-miniprogram device location helper (monorepo: core + per-platform packages)",
   "license": "ISC",
